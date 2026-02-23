@@ -28,6 +28,8 @@
 [PRINCIPLE_5_DESCRIPTION]
 <!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
 
+**Logging Standard**: All logging MUST use `loguru` as the logging library. Standard Python logging is prohibited. Loguru provides structured logging, automatic formatting, and better debugging capabilities.
+
 ## [SECTION_2_NAME]
 <!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
@@ -46,5 +48,6 @@
 [GOVERNANCE_RULES]
 <!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: 2026-02-19
 <!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+<!-- Last amendment: Added loguru as required logging library -->

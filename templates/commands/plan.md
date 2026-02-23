@@ -75,12 +75,18 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Validation rules from requirements
    - State transitions if applicable
 
-2. **Generate API contracts** from functional requirements:
+2. **Identify key functions** from functional requirements → fill `Key Functions` table and `Function Workflow` diagram in IMPL_PLAN:
+   - For each major capability → named function (snake_case)
+   - Use these instructions when creating the function names templates/python-function-template.md
+   - Module placement based on Project Structure
+   - Mermaid flowchart showing call relationships
+
+3. **Generate API contracts** from functional requirements:
    - For each user action → endpoint
    - Use standard REST/GraphQL patterns
    - Output OpenAPI/GraphQL schema to `/contracts/`
 
-3. **Agent context update**:
+4. **Agent context update**:
    - Run `{AGENT_SCRIPT}`
    - These scripts detect which AI agent is in use
    - Update the appropriate agent-specific context file

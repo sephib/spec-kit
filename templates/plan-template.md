@@ -94,6 +94,37 @@ ios/ or android/
 **Structure Decision**: [Document the selected structure and reference the real
 directories captured above]
 
+## Key Functions
+
+<!--
+  ACTION REQUIRED: List the key Python functions that will be created for this
+  feature. Focus on the primary public API — internal helpers can be omitted.
+  Names should follow Python conventions (snake_case).
+-->
+
+| Function | Module | Purpose | Inputs | Returns |
+|----------|--------|---------|--------|---------|
+| [e.g., `parse_spec`] | [e.g., `src/parser.py`] | [what it does] | [key params] | [return type] |
+| [e.g., `validate_config`] | [e.g., `src/config.py`] | [what it does] | [key params] | [return type] |
+
+## Function Workflow
+
+<!--
+  ACTION REQUIRED: Replace the example below with a mermaid diagram showing
+  how the key functions call each other. This should reflect the primary
+  execution flow, not every possible code path.
+-->
+
+```mermaid
+flowchart TD
+    A[entry_point] --> B[parse_spec]
+    B --> C[validate_config]
+    C --> D{valid?}
+    D -->|yes| E[process_data]
+    D -->|no| F[handle_error]
+    E --> G[generate_output]
+```
+
 ## Complexity Tracking
 
 > **Fill ONLY if Constitution Check has violations that must be justified**
